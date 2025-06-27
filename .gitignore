@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+*.env
+*.bak
+*.sqlite3
+
+# Specific to your project (if any)
+# np. pliki logów
+# log.txt
+
+# Environment variables (sensitive data)
+# .env
