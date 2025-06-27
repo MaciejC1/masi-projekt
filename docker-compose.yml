@@ -1,0 +1,17 @@
+services:
+  db:
+    image: mysql:8.0
+    container_name: uniterm-mysql-db
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: uniterm_db
+      MYSQL_USER: uniterm_user
+      MYSQL_PASSWORD: uniterm_password
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
